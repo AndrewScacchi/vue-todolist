@@ -14,8 +14,8 @@
         <img id= "logo" src="img/logo.png" alt="logo boolean">
 
         <div class="input-section">
-            <input type="text" placeholder="">
-            <button class="btn">Aggiungi un ToDO</button>
+            <input type="text" placeholder="Add a new ToDo!" @keyup.enter="addToDo" v-model="newToDo">
+            <button class="btn" @click="addToDo">Aggiungi un ToDo</button>
         </div>
         <div class="container">
             <!-- v-if -->

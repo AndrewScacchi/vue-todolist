@@ -3,6 +3,7 @@
 const mytoDoList = new Vue({
     el:"#root",
     data : {
+        newToDo : "",
         toDos : [
             {
                 "text"   : "Ehi prof che cosa vuoi fare stasera?",
@@ -27,6 +28,17 @@ const mytoDoList = new Vue({
         // delete an element on click of another
         deleteToDo(index) {
             this.toDos.splice(index,1);
-        }
+        },
+        // add an element from an input field on click of button
+        addToDo(){
+            const newLi = {
+                text : this.newToDo,
+                done : false
+            }
+            if(this.newToDo !== "") {
+                this.toDos.push(newLi);
+                this.newToDo = "";
+            }
+        },
     }
 });
