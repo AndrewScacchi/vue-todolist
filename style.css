@@ -7,6 +7,12 @@
 }
 
 /* specific styles */
+.input-section {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+}
 input, .btn{
     border-radius: 5px;
     height: 30px;
@@ -14,10 +20,48 @@ input, .btn{
     padding: 0 10px;
     border: 1px solid #001533;
 }
+input {
+    width: 250px;
+}
 .btn {
     background-color: #00e165;
     color: white;
     border: 1px solid #001533;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: scale(102%);
+}
+
+.container {
+    width: 500px;
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+}
+ul{
+    list-style: none;
+
+}
+ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    height: 30px;
+    padding: 20px 5px;
+   
+}
+li:hover {
+    background: beige;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+i:hover {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #logo {
@@ -29,4 +73,10 @@ div#root {
     flex-direction: column;
     align-items: center;
     gap: 25px;
+}
+
+/* Class for JS */
+
+.text-crossed {
+    text-decoration: line-through;
 }
