@@ -1,0 +1,32 @@
+/* General Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* specific styles */
+input, .btn{
+    border-radius: 5px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #001533;
+}
+.btn {
+    background-color: #00e165;
+    color: white;
+    border: 1px solid #001533;
+}
+
+#logo {
+    width: 300px;
+    margin-top: 50px;
+}
+div#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
